@@ -1,0 +1,47 @@
+
+.appContent {
+    color: #00B0FF;
+    font-size: smaller;
+    font-weight: bold;
+
+    overflow: hidden;
+}
+
+.content {
+
+  overflow-y:hidden;
+  overflow-x: hidden;
+
+
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size:18px;
+  }
+}

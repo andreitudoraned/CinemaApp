@@ -1,0 +1,13 @@
+
+<div class="container" style="overflow-y: scroll; height:400px;">
+	<div *ngFor="let p of products">
+<<<<<<< HEAD
+		<div *ngIf="p.category == 'meath'">
+			<osl-product-item [product]="p"></osl-product-item>
+		</div>
+=======
+		<osl-product-item [product]="p"></osl-product-item>
+
+>>>>>>> agata-libwrk
+	</div>
+</div>

@@ -1,0 +1,22 @@
+<div class = "movieItem">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-3">
+				<div class = "imageArea">
+					<div><img [src] = 'imgUrl' alt='{{movie.name}}'></div>
+				</div>
+			</div>
+
+	    <div class="col-md*-9">
+				<div class = "detailsArea">
+					<h3 > <a [routerLink]="['/movie-details', movie.id]">{{ movie.name }}</a></h3>
+					<div>Category: {{ movie.category }}</div>
+					<div>Showtimes:  {{ movie.openingHours }}</div>
+					<div>City:  {{ movie.city }}</div>
+					<div>County:  {{ movie.county }}</div>
+					<div><score [score] = "movie.score"></score></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,42 @@
+<div class="container">
+  <div class = "col-lg-10">
+    <div *ngFor="let r of movies">
+      <div *ngIf = "r.id == this.id">
+
+        <a routerLink = "/home"><h2>Back...</h2></a>
+        <osl-movie-item [movie]="r"></osl-movie-item>
+      </div>
+    </div>
+
+    <!-- <div class = "menu">
+      <div class = "col-lg-10">
+        <h1>Details</h1>
+      </div>
+    </div> -->
+
+    <div class = "review">
+      <div class = "col-lg-6">
+          <div class = "user-reviews">
+            <h1 >Reviews</h1>
+            <div *ngFor="let p of reviews">
+              <div *ngIf = "p.id == this.id">
+                <osl-review-item [review]="p"></osl-review-item>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-6">
+            <div class = "user-reviews">
+              <h1 >Review</h1>
+              <div class = "inputs">
+                <input type= "#text" placeholder="Name" #input1>
+                <input type= "#text" placeholder="Comment" #input2>
+                <input type= "number" placeholder="Rating" #input3>
+              </div>
+              <div>
+                <button (click)= "write(input1.value, input2.value, input3.value)">Submit</button>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>

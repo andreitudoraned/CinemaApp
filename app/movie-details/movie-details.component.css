@@ -1,0 +1,42 @@
+
+.review{
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 70vh;
+  width: 100%;
+  border-style: solid;
+}
+
+.rating {
+  height:400px;
+  width:100%;
+}
+
+.user-reviews{
+  width:100%;
+}
+
+.inputs {
+  width:100%;
+}
+.inputs input {
+  width:100%;
+}
+.menu{
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 50vh;
+  width: 100%;
+  border-style: solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: auto;
+}
+
+.imageArea img{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}

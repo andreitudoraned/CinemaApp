@@ -1,0 +1,47 @@
+
+
+<div class = "row">
+	<div class = "col-md-4">
+		<select (change)="filter($event.target.value, 1)" class= "selectpicker">
+			 <option>Select Cinema</option>
+				<option>North Trim Theater</option>
+				<option>Enfield Cinemas</option>
+		</select>
+	</div>
+<!--
+	<div class = "col-md-4">
+		<select (change)="filter($event.target.value, 2)" class= "selectpicker">
+			 <option>Food Type</option>
+				<option>Indian</option>
+				<option>Chinese</option>
+				<option>Italian</option>
+				<option>Cafe</option>
+				<option>European</option>
+		</select>
+	</div>
+
+
+	<div class = "col-md-4">
+		<select (change)="filter($event.target.value, 3)" class= "selectpicker">
+			 <option>Price Range</option>
+				<option>Cheap</option>
+				<option>Average</option>
+				<option>Expensive</option>
+		</select>
+	</div> -->
+
+	</div>
+
+<div class="container">
+
+
+		<div *ngIf="tempMovies.length ==0">
+			<h1>Please Choose An Option!</h1>
+		</div>
+			<div *ngFor="let r of tempMovies">
+
+				<div *ngIf="r.county == 'Meath'">
+					<osl-movie-item [movie]="r"></osl-movie-item>
+				</div>
+		  </div>
+	</div>
